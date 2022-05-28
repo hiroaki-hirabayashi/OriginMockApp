@@ -12,7 +12,7 @@ import UIKit
 final class AppearanceService {
     
     /*!
-     *  @description TabBarに画像、色などを設定します
+     *  @description TabBarに画像、色などを設定する
      *
      *  @param tabBar         画像、色を設定するTabBar
      *  @param defaultColor   通常時の色
