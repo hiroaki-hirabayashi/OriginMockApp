@@ -38,5 +38,10 @@ final class TabBarIconPattern: TabBarIconPatternProtocol {
         "みつかる"
     }
     
+    /// タブバーのフォント
+    internal static let tabBarItemFont = UIFont.boldSystemFont(ofSize: smallFontSize)
+    /// 小さいフォントサイズ
+    fileprivate static let smallFontSize: CGFloat = 9.0
+
     
 }
