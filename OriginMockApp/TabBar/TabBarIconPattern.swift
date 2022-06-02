@@ -39,9 +39,9 @@ final class TabBarIconPattern: TabBarIconPatternProtocol {
     }
     
     /// タブバーのフォント
-    internal static let tabBarItemFont = UIFont.boldSystemFont(ofSize: smallFontSize)
+    let tabBarItemFont = UIFont.boldSystemFont(ofSize: smallFontSize)
     /// 小さいフォントサイズ
-    fileprivate static let smallFontSize: CGFloat = 9.0
+    static let smallFontSize: CGFloat = 9.0
 
     
 }

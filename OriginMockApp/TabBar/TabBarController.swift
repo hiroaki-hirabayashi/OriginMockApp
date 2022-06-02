@@ -30,7 +30,7 @@ class TabBarController: UITabBarController {
         AppearanceService.setTabBarStyle(withTabBar: self.tabBar,
                                             defaultImages: tabbarIconPattern.tabIconImageList(),
                                             selectedImages: tabbarIconPattern.tabIconSelectedImageList(),
-                                            font: TabBarIconPattern.tabBarItemFont)
+                                            font: tabbarIconPattern.tabBarItemFont)
         currentTabIndex = TabBarIndex.searchTop.rawValue
 
         // 起動されたらAppDelegateに情報を渡す
