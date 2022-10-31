@@ -1,4 +1,4 @@
 # OriginMockApp
 
-- よくあるアプリ風のモックApp
+よくあるアプリ風のモックApp
 
