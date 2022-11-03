@@ -1,4 +1,3 @@
 # OriginMockApp
 
 よくあるアプリ風のモックApp
-
