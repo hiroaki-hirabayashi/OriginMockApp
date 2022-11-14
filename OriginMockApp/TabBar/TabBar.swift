@@ -17,7 +17,7 @@ enum TabBarIndex: Int {
     case count      // タブの数
 }
 
-class TabBarController: UITabBarController {
+class TabBar: UITabBarController {
     /// 選択中タブIndex
     private var currentTabIndex = 0
     private var isFromSearchList = false
@@ -33,9 +33,9 @@ class TabBarController: UITabBarController {
                                             font: tabbarIconPattern.tabBarItemFont)
         currentTabIndex = TabBarIndex.searchTop.rawValue
 
-        // 起動されたらAppDelegateに情報を渡す
-        let appDelegate = UIApplication.shared.delegate as? AppDelegate
-        appDelegate?.topTabBarController = self
+//        // 起動されたらAppDelegateに情報を渡す
+//        let appDelegate = UIApplication.shared.delegate as? AppDelegate
+//        appDelegate?.topTabBarController = self
     }
     
 

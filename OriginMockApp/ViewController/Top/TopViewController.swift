@@ -7,14 +7,11 @@
 
 import UIKit
 
-class ViewController: UIViewController {
-
-    let tabBar = UITabBarController()
+final class TopViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        tabBar.setViewControllers([UINavigationController()], animated: false)
+        navigationItem.title = "Top"
     }
 
 
