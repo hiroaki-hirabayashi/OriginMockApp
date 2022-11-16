@@ -188,6 +188,8 @@
 		F4E02959292289E60006F195 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				F4E02966292530270006F195 /* JobList */,
+				F4E029672925303E0006F195 /* KeepList */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -225,6 +227,20 @@
 			children = (
 				F4E0296429228CD30006F195 /* KeepListViewController.swift */,
 				F4E0296229228CAF0006F195 /* KeepList.storyboard */,
+			);
+			path = KeepList;
+			sourceTree = "<group>";
+		};
+		F4E02966292530270006F195 /* JobList */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = JobList;
+			sourceTree = "<group>";
+		};
+		F4E029672925303E0006F195 /* KeepList */ = {
+			isa = PBXGroup;
+			children = (
 			);
 			path = KeepList;
 			sourceTree = "<group>";
