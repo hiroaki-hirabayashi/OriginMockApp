@@ -26,6 +26,8 @@
 		F4E0296029228C6F0006F195 /* Top.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F4E0295F29228C6F0006F195 /* Top.storyboard */; };
 		F4E0296329228CAF0006F195 /* KeepList.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F4E0296229228CAF0006F195 /* KeepList.storyboard */; };
 		F4E0296529228CD30006F195 /* KeepListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4E0296429228CD30006F195 /* KeepListViewController.swift */; };
+		F4E0296F292A72B20006F195 /* TopCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4E0296D292A72B20006F195 /* TopCollectionViewCell.swift */; };
+		F4E02970292A72B20006F195 /* TopCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F4E0296E292A72B20006F195 /* TopCollectionViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -69,6 +71,8 @@
 		F4E0295F29228C6F0006F195 /* Top.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Top.storyboard; sourceTree = "<group>"; };
 		F4E0296229228CAF0006F195 /* KeepList.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = KeepList.storyboard; sourceTree = "<group>"; };
 		F4E0296429228CD30006F195 /* KeepListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeepListViewController.swift; sourceTree = "<group>"; };
+		F4E0296D292A72B20006F195 /* TopCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopCollectionViewCell.swift; sourceTree = "<group>"; };
+		F4E0296E292A72B20006F195 /* TopCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TopCollectionViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -188,6 +192,7 @@
 		F4E02959292289E60006F195 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				F4E0296C292A72780006F195 /* Top */,
 				F4E02966292530270006F195 /* JobList */,
 				F4E029672925303E0006F195 /* KeepList */,
 			);
@@ -243,6 +248,15 @@
 			children = (
 			);
 			path = KeepList;
+			sourceTree = "<group>";
+		};
+		F4E0296C292A72780006F195 /* Top */ = {
+			isa = PBXGroup;
+			children = (
+				F4E0296D292A72B20006F195 /* TopCollectionViewCell.swift */,
+				F4E0296E292A72B20006F195 /* TopCollectionViewCell.xib */,
+			);
+			path = Top;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -350,6 +364,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F4B4399C283A88FA0011B52C /* LaunchScreen.storyboard in Resources */,
+				F4E02970292A72B20006F195 /* TopCollectionViewCell.xib in Resources */,
 				F497448C283E73BB0000A7B0 /* Image.xcassets in Resources */,
 				F4B43999283A88FA0011B52C /* Assets.xcassets in Resources */,
 				F4E0296329228CAF0006F195 /* KeepList.storyboard in Resources */,
@@ -388,6 +403,7 @@
 				F4974491284798670000A7B0 /* TabBar.swift in Sources */,
 				F4E0296529228CD30006F195 /* KeepListViewController.swift in Sources */,
 				F4B4398D283A88F70011B52C /* AppDelegate.swift in Sources */,
+				F4E0296F292A72B20006F195 /* TopCollectionViewCell.swift in Sources */,
 				F4B4398F283A88F70011B52C /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
