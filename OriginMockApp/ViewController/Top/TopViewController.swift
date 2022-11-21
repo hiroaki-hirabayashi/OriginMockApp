@@ -35,7 +35,6 @@ extension TopViewController: UICollectionViewDelegate, UICollectionViewDataSourc
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-//        let cell:UICollectionViewCell = collectionView.dequeueReusableCell(withReuseIdentifier: "cell", for: indexPath)
 
         guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: TopCollectionViewCell.cellId, for: indexPath) as? TopCollectionViewCell else {
             fatalError("TopCollectionViewCell読み込み失敗")

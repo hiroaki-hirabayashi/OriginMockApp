@@ -17,7 +17,7 @@
                 <rect key="frame" x="0.0" y="0.0" width="464" height="209"/>
                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 <subviews>
-                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4fe-8F-7zs" customClass="TopCollectionViewCell" customModule="OriginMockApp" customModuleProvider="target">
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4fe-8F-7zs">
                         <rect key="frame" x="0.0" y="0.0" width="464" height="209"/>
                     </view>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eb2-vC-qGd">

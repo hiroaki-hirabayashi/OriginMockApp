@@ -38,8 +38,8 @@
                                     </collectionViewCell>
                                 </cells>
                                 <connections>
-                                    <outlet property="delegate" destination="Y6W-OH-hqX" id="URh-LW-Czo"/>
-                                    <outlet property="dragDelegate" destination="Y6W-OH-hqX" id="Xlb-ZM-BAB"/>
+                                    <outlet property="dataSource" destination="Y6W-OH-hqX" id="nIf-gr-qZ4"/>
+                                    <outlet property="delegate" destination="Y6W-OH-hqX" id="aeb-BE-peM"/>
                                 </connections>
                             </collectionView>
                         </subviews>
@@ -53,7 +53,7 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="collectionView" destination="Rol-Z7-bLG" id="4LC-zF-5Oq"/>
+                        <outlet property="collectionView" destination="Rol-Z7-bLG" id="5cM-R4-gTF"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
