@@ -39,11 +39,11 @@ extension TopViewController: UICollectionViewDelegate, UICollectionViewDataSourc
         guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: TopCollectionViewCell.cellId, for: indexPath) as? TopCollectionViewCell else {
             fatalError("TopCollectionViewCell読み込み失敗")
         }
+        
+        cell.delegate = self
+        
         return cell
     }
-
-    
-    
 }
 
 // MARK: - UICollectionViewDelegateFlowLayout
@@ -55,3 +55,12 @@ extension TopViewController: UICollectionViewDelegateFlowLayout {
   }
 }
 
+//MARK: - TopCollectionViewCellDelegate
+extension TopViewController: TopCollectionViewCellDelegate {
+    func onTapSeachResultButton() {
+        guard let jobListVC = UIStoryboard(name: "JobList", bundle: nil).instantiateInitialViewController() as? JobListViewController else {
+            fatalError("JobList.storyboard読み込み失敗")
+        }
+        navigationController?.pushViewController(jobListVC, animated: true)
+    }
+}
