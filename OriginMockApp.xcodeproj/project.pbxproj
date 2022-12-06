@@ -28,6 +28,10 @@
 		F4E0296529228CD30006F195 /* KeepListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4E0296429228CD30006F195 /* KeepListViewController.swift */; };
 		F4E0296F292A72B20006F195 /* TopCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4E0296D292A72B20006F195 /* TopCollectionViewCell.swift */; };
 		F4E02970292A72B20006F195 /* TopCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F4E0296E292A72B20006F195 /* TopCollectionViewCell.xib */; };
+		F4E029732931BC7E0006F195 /* JobList.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F4E029722931BC7E0006F195 /* JobList.storyboard */; };
+		F4E029752931BC950006F195 /* JobListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4E029742931BC950006F195 /* JobListViewController.swift */; };
+		F4E0297829351DF40006F195 /* JobListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4E0297629351DF30006F195 /* JobListCell.swift */; };
+		F4E0297929351DF40006F195 /* JobListCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F4E0297729351DF30006F195 /* JobListCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -73,6 +77,10 @@
 		F4E0296429228CD30006F195 /* KeepListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeepListViewController.swift; sourceTree = "<group>"; };
 		F4E0296D292A72B20006F195 /* TopCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopCollectionViewCell.swift; sourceTree = "<group>"; };
 		F4E0296E292A72B20006F195 /* TopCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TopCollectionViewCell.xib; sourceTree = "<group>"; };
+		F4E029722931BC7E0006F195 /* JobList.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = JobList.storyboard; sourceTree = "<group>"; };
+		F4E029742931BC950006F195 /* JobListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JobListViewController.swift; sourceTree = "<group>"; };
+		F4E0297629351DF30006F195 /* JobListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JobListCell.swift; sourceTree = "<group>"; };
+		F4E0297729351DF30006F195 /* JobListCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = JobListCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -204,6 +212,7 @@
 			children = (
 				F4E0295B29228A160006F195 /* Main */,
 				F4E0295C29228B9B0006F195 /* Top */,
+				F4E029712931BC590006F195 /* JobList */,
 				F4E0296129228C810006F195 /* KeepList */,
 			);
 			path = ViewController;
@@ -239,6 +248,8 @@
 		F4E02966292530270006F195 /* JobList */ = {
 			isa = PBXGroup;
 			children = (
+				F4E0297629351DF30006F195 /* JobListCell.swift */,
+				F4E0297729351DF30006F195 /* JobListCell.xib */,
 			);
 			path = JobList;
 			sourceTree = "<group>";
@@ -257,6 +268,15 @@
 				F4E0296E292A72B20006F195 /* TopCollectionViewCell.xib */,
 			);
 			path = Top;
+			sourceTree = "<group>";
+		};
+		F4E029712931BC590006F195 /* JobList */ = {
+			isa = PBXGroup;
+			children = (
+				F4E029742931BC950006F195 /* JobListViewController.swift */,
+				F4E029722931BC7E0006F195 /* JobList.storyboard */,
+			);
+			path = JobList;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -363,6 +383,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F4E029732931BC7E0006F195 /* JobList.storyboard in Resources */,
 				F4B4399C283A88FA0011B52C /* LaunchScreen.storyboard in Resources */,
 				F4E02970292A72B20006F195 /* TopCollectionViewCell.xib in Resources */,
 				F497448C283E73BB0000A7B0 /* Image.xcassets in Resources */,
@@ -370,6 +391,7 @@
 				F4E0296329228CAF0006F195 /* KeepList.storyboard in Resources */,
 				F4B43994283A88F70011B52C /* Main.storyboard in Resources */,
 				F4E0296029228C6F0006F195 /* Top.storyboard in Resources */,
+				F4E0297929351DF40006F195 /* JobListCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -394,6 +416,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F4E029752931BC950006F195 /* JobListViewController.swift in Sources */,
 				F4974489283E73300000A7B0 /* TabBarIconPattern.swift in Sources */,
 				F4E02958292289640006F195 /* DataStore.swift in Sources */,
 				F497448F283E9F9A0000A7B0 /* AppearanceService.swift in Sources */,
@@ -405,6 +428,7 @@
 				F4B4398D283A88F70011B52C /* AppDelegate.swift in Sources */,
 				F4E0296F292A72B20006F195 /* TopCollectionViewCell.swift in Sources */,
 				F4B4398F283A88F70011B52C /* SceneDelegate.swift in Sources */,
+				F4E0297829351DF40006F195 /* JobListCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

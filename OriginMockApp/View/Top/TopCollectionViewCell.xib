@@ -40,6 +40,9 @@
                                     <fontDescription key="titleFontDescription" type="system" pointSize="20"/>
                                     <directionalEdgeInsets key="contentInsets" top="0.0" leading="0.0" bottom="0.0" trailing="30"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="onTapSeachResuitButton:" destination="gTV-IL-0wX" eventType="touchUpInside" id="GxC-zi-QLX"/>
+                                </connections>
                             </button>
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="G3o-Si-g3d">
                                 <rect key="frame" x="97" y="109" width="260" height="80"/>
@@ -126,6 +129,12 @@
                 <constraint firstItem="eb2-vC-qGd" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="yhC-q6-qgt"/>
             </constraints>
             <size key="customSize" width="464" height="209"/>
+            <connections>
+                <outlet property="areaButton" destination="A8k-pf-TGn" id="hky-Oc-DqV"/>
+                <outlet property="jobButton" destination="juN-ZY-5Ya" id="awo-LN-0es"/>
+                <outlet property="seachResultButton" destination="9ND-BU-MRy" id="DnH-BC-5oU"/>
+                <outlet property="stationButton" destination="GnY-5H-T23" id="Lfg-jS-nqR"/>
+            </connections>
             <point key="canvasLocation" x="347.82608695652175" y="-20.424107142857142"/>
         </collectionViewCell>
     </objects>
