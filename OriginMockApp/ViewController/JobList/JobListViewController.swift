@@ -37,12 +37,18 @@ extension JobListViewController: UITableViewDataSource {
         }
         let jobDetail = jobList[indexPath.row]
         cell.setUp(jobDetail: jobDetail)
-        
+        cell.selectionStyle = UITableViewCell.SelectionStyle.none
+
         return cell 
     }
     
 }
 
 extension JobListViewController: UITableViewDelegate {
-    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        guard let jobDetailVC = UIStoryboard(name: "JobDetail", bundle: nil).instantiateInitialViewController() as? JobDetailViewController else {
+            fatalError("JobDetail.storyboard読み込み失敗")
+        }
+        self.navigationController?.pushViewController(jobDetailVC, animated: true)
+    }
 }
