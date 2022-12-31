@@ -11,7 +11,9 @@ import UIKit
 // 求人一覧画面
 final class JobListViewController: UIViewController {
     
-    let jobList = DataStore.shared.jobList
+    // MARK: - Properties
+    private let jobList = DataStore.shared.jobList
+    private let presenter = JobListViewPresenter()
     
     // MARK: - IBOutlets
     @IBOutlet weak var tableView: UITableView!
@@ -36,7 +38,8 @@ extension JobListViewController: UITableViewDataSource {
             fatalError("JobListCell読み込み失敗")
         }
         let jobDetail = jobList[indexPath.row]
-        cell.setUp(jobDetail: jobDetail)
+        cell.delegate = self
+        cell.setUp(jobDetail: jobDetail, isKeep: presenter.checkToKeepingAndIndex(index: indexPath.row))
         cell.selectionStyle = UITableViewCell.SelectionStyle.none
 
         return cell 
@@ -50,5 +53,16 @@ extension JobListViewController: UITableViewDelegate {
             fatalError("JobDetail.storyboard読み込み失敗")
         }
         self.navigationController?.pushViewController(jobDetailVC, animated: true)
+    }
+}
+
+extension JobListViewController: JobListCellDelegate {
+    func tappedKeepButton(cell: JobListCell) {
+        // cellからindexPathを取得する
+        guard let indexPath = tableView.indexPath(for: cell) else { return }
+        // キープの状態切り替えはPresenterに任せる
+        presenter.tappedKeepButton(index: indexPath.row)
+        // cellの見た目更新
+        cell.changeKeepButtonState(isKeep: presenter.checkToKeepingAndIndex(index: indexPath.row))
     }
 }
