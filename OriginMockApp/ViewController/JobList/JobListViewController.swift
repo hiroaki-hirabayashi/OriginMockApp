@@ -16,7 +16,7 @@ final class JobListViewController: UIViewController {
     private let presenter = JobListViewPresenter()
     
     // MARK: - IBOutlets
-    @IBOutlet weak var tableView: UITableView!
+    @IBOutlet private weak var tableView: UITableView!
     
     // MARK: - Life Cycle
     override func viewDidLoad() {
