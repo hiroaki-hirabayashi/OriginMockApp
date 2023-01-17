@@ -25,7 +25,7 @@ final class JobListCell: UITableViewCell {
     @IBOutlet private weak var keepButton: UIButton!
     
     // MARK: - IBActions
-    @IBAction func tappedKeepButton(_ sender: Any) {
+    @IBAction private func tappedKeepButton(_ sender: Any) {
         delegate?.tappedKeepButton(cell: self)
     }
     // MARK: - LifeCycle
