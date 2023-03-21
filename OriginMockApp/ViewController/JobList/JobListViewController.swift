@@ -49,9 +49,15 @@ extension JobListViewController: UITableViewDataSource {
 
 extension JobListViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        guard let jobDetailVC = UIStoryboard(name: "JobDetail", bundle: nil).instantiateInitialViewController() as? JobDetailViewController else {
-            fatalError("JobDetail.storyboard読み込み失敗")
-        }
+        let tenRangeItems = presenter.tenRangeItemsJobList[indexPath.row]
+        
+//        guard let jobDetailVC = UIStoryboard(name: "JobDetail", bundle: nil).instantiateInitialViewController() as? JobDetailViewController else {
+//            fatalError("JobDetail.storyboard読み込み失敗")
+//        }
+        guard let jobDetailVC = UIStoryboard(name: "JobDetail", bundle: nil).instantiateInitialViewController(creator: { coder in
+            return JobDetailViewController(coder: coder, rqmtId: tenRangeItems.rqmtId, companyName: tenRangeItems.companyName)
+        }) else { return }
+        
         self.navigationController?.pushViewController(jobDetailVC, animated: true)
     }
 }

@@ -13,7 +13,7 @@ final class JobListViewPresenter {
     // MARK: - Properties
     var rqmtId = ""
     // あらかじめ10件に絞り込む
-    let jobList = DataStore.shared.jobList.prefix(10)
+    let tenRangeItemsJobList = DataStore.shared.jobList.prefix(10)
     
     // MARK: - Private Functions
     /// 求人情報をキープリストに保存
@@ -30,12 +30,12 @@ final class JobListViewPresenter {
 
     /// N番目の求人情報をキープしているかBool判定
     func checkToKeepingAndIndex(index: Int) -> Bool {
-        DataStore.shared.keepList.contains(where: { $0.rqmtId == jobList[index].rqmtId })
+        DataStore.shared.keepList.contains(where: { $0.rqmtId == tenRangeItemsJobList[index].rqmtId })
     }
     
     /// タップされたキープボタンのIndexを元にPresenter側でキープにするか未キープにするか判断する
     func tappedKeepButton(index: Int) {
-        let jobDetail = jobList[index]
+        let jobDetail = tenRangeItemsJobList[index]
         if checkToKeepingAndIndex(index: index) {
             removeKeepList(rqmtId: jobDetail.rqmtId)
         } else {
