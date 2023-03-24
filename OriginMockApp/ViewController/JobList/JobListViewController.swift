@@ -26,6 +26,11 @@ final class JobListViewController: UIViewController {
         tableView.backgroundColor = UIColor.gray
         tableView.separatorStyle = .none
     }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        tableView.reloadData()
+    }
 }
 
 extension JobListViewController: UITableViewDataSource {
@@ -58,7 +63,7 @@ extension JobListViewController: UITableViewDelegate {
             return JobDetailViewController(coder: coder, rqmtId: tenRangeItems.rqmtId, companyName: tenRangeItems.companyName)
         }) else { return }
         
-        self.navigationController?.pushViewController(jobDetailVC, animated: true)
+        navigationController?.pushViewController(jobDetailVC, animated: true)
     }
 }
 

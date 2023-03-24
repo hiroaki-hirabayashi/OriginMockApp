@@ -23,7 +23,10 @@ final class JobDetailViewController: UIViewController {
     @IBOutlet private weak var companyNameLabel: UILabel!
     @IBOutlet private weak var keepButton: UIButton!
     
-    
+    // MARK: - IBActions
+    @IBAction func tappedKeepButtonAction(_ sender: Any) {
+        keepButtonAction()
+    }
     
     // MARK: - LifeCycle
     init?(coder: NSCoder, rqmtId: String, companyName: String) {
@@ -39,5 +42,30 @@ final class JobDetailViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         navigationItem.title = "求人詳細"
+        companyNameLabel.text = companyName
+        if isKeep {
+            keepState()
+        }
+    }
+    
+    // MARK: - Private Functions
+    private func keepButtonAction() {
+        if isKeep {
+            presenter.removeKeepList(rqmtId: rqmtId)
+            noKeepState()
+        } else {
+            presenter.setKeepList(rqmtId: rqmtId, date: Date())
+            keepState()
+        }
+    }
+    
+    private func keepState() {
+        keepButton.setTitle("キープ済み", for: .normal)
+        keepButton.backgroundColor = .systemYellow
+    }
+    
+    private func noKeepState() {
+        keepButton.setTitle("キープする", for: .normal)
+        keepButton.backgroundColor = .white
     }
 }

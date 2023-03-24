@@ -17,7 +17,6 @@ final class JobListCell: UITableViewCell {
     // MARK: - Properties
     let jobList = DataStore.shared.jobList.prefix(10)
     static let cellId = "JobListCell"
-    private var isKeep = false
     weak var delegate: JobListCellDelegate?
     
     // MARK: - IBOutlets
@@ -40,12 +39,12 @@ final class JobListCell: UITableViewCell {
     }
     
     // MARK: - Private Functions
-    private func changeButtonToKeepState() {
+    private func keepState() {
         keepButton.setTitle("キープ済み", for: .normal)
         keepButton.backgroundColor = .systemYellow
     }
     
-    private func changeButtonToUnKeepState() {
+    private func noKeepState() {
         keepButton.setTitle("キープする", for: .normal)
         keepButton.backgroundColor = .white
     }
@@ -58,7 +57,7 @@ final class JobListCell: UITableViewCell {
     }
     
     func changeKeepButtonState(isKeep: Bool) {
-        isKeep ? changeButtonToKeepState() : changeButtonToUnKeepState()
+        isKeep ? keepState() : noKeepState()
     }
     
 }
