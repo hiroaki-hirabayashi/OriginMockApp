@@ -35,6 +35,7 @@
 		F4E0297929351DF40006F195 /* JobListCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F4E0297729351DF30006F195 /* JobListCell.xib */; };
 		F4E0297C29422B0E0006F195 /* JobDetail.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F4E0297B29422B0E0006F195 /* JobDetail.storyboard */; };
 		F4E0297E29422B3F0006F195 /* JobDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4E0297D29422B3F0006F195 /* JobDetailViewController.swift */; };
+		F4EFC8F4297D85F00089603E /* JobDetailPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4EFC8F3297D85F00089603E /* JobDetailPresenter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -87,6 +88,7 @@
 		F4E0297729351DF30006F195 /* JobListCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = JobListCell.xib; sourceTree = "<group>"; };
 		F4E0297B29422B0E0006F195 /* JobDetail.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = JobDetail.storyboard; sourceTree = "<group>"; };
 		F4E0297D29422B3F0006F195 /* JobDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JobDetailViewController.swift; sourceTree = "<group>"; };
+		F4EFC8F3297D85F00089603E /* JobDetailPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JobDetailPresenter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -292,6 +294,7 @@
 			children = (
 				F4E0297D29422B3F0006F195 /* JobDetailViewController.swift */,
 				F4E0297B29422B0E0006F195 /* JobDetail.storyboard */,
+				F4EFC8F3297D85F00089603E /* JobDetailPresenter.swift */,
 			);
 			path = JobDetail;
 			sourceTree = "<group>";
@@ -443,6 +446,7 @@
 				F4B43991283A88F70011B52C /* TopViewController.swift in Sources */,
 				F4B43997283A88F70011B52C /* OriginMockApp.xcdatamodeld in Sources */,
 				F4974491284798670000A7B0 /* TabBar.swift in Sources */,
+				F4EFC8F4297D85F00089603E /* JobDetailPresenter.swift in Sources */,
 				F4E0296529228CD30006F195 /* KeepListViewController.swift in Sources */,
 				F4E0297E29422B3F0006F195 /* JobDetailViewController.swift in Sources */,
 				F4B4398D283A88F70011B52C /* AppDelegate.swift in Sources */,

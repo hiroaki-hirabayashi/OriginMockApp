@@ -26,6 +26,11 @@ final class JobListViewController: UIViewController {
         tableView.backgroundColor = UIColor.gray
         tableView.separatorStyle = .none
     }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        tableView.reloadData()
+    }
 }
 
 extension JobListViewController: UITableViewDataSource {
@@ -49,10 +54,16 @@ extension JobListViewController: UITableViewDataSource {
 
 extension JobListViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        guard let jobDetailVC = UIStoryboard(name: "JobDetail", bundle: nil).instantiateInitialViewController() as? JobDetailViewController else {
-            fatalError("JobDetail.storyboard読み込み失敗")
-        }
-        self.navigationController?.pushViewController(jobDetailVC, animated: true)
+        let tenRangeItems = presenter.tenRangeItemsJobList[indexPath.row]
+        
+//        guard let jobDetailVC = UIStoryboard(name: "JobDetail", bundle: nil).instantiateInitialViewController() as? JobDetailViewController else {
+//            fatalError("JobDetail.storyboard読み込み失敗")
+//        }
+        guard let jobDetailVC = UIStoryboard(name: "JobDetail", bundle: nil).instantiateInitialViewController(creator: { coder in
+            return JobDetailViewController(coder: coder, rqmtId: tenRangeItems.rqmtId, companyName: tenRangeItems.companyName)
+        }) else { return }
+        
+        navigationController?.pushViewController(jobDetailVC, animated: true)
     }
 }
 
