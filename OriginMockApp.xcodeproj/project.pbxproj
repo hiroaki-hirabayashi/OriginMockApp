@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F41F4A1429CF4EA800AC3D19 /* KeepListCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F41F4A1329CF4EA800AC3D19 /* KeepListCell.xib */; };
+		F41F4A1629CF4EF000AC3D19 /* KeepListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F41F4A1529CF4EF000AC3D19 /* KeepListCell.swift */; };
 		F4974489283E73300000A7B0 /* TabBarIconPattern.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4974488283E73300000A7B0 /* TabBarIconPattern.swift */; };
 		F497448C283E73BB0000A7B0 /* Image.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F497448B283E73BB0000A7B0 /* Image.xcassets */; };
 		F497448F283E9F9A0000A7B0 /* AppearanceService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F497448E283E9F9A0000A7B0 /* AppearanceService.swift */; };
@@ -56,6 +58,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		F41F4A1329CF4EA800AC3D19 /* KeepListCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = KeepListCell.xib; path = OriginMockApp/View/KeepList/KeepListCell.xib; sourceTree = SOURCE_ROOT; };
+		F41F4A1529CF4EF000AC3D19 /* KeepListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeepListCell.swift; sourceTree = "<group>"; };
 		F4974488283E73300000A7B0 /* TabBarIconPattern.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarIconPattern.swift; sourceTree = "<group>"; };
 		F497448B283E73BB0000A7B0 /* Image.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Image.xcassets; sourceTree = "<group>"; };
 		F497448E283E9F9A0000A7B0 /* AppearanceService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppearanceService.swift; sourceTree = "<group>"; };
@@ -266,6 +270,8 @@
 		F4E029672925303E0006F195 /* KeepList */ = {
 			isa = PBXGroup;
 			children = (
+				F41F4A1529CF4EF000AC3D19 /* KeepListCell.swift */,
+				F41F4A1329CF4EA800AC3D19 /* KeepListCell.xib */,
 			);
 			path = KeepList;
 			sourceTree = "<group>";
@@ -405,6 +411,7 @@
 			files = (
 				F4E029732931BC7E0006F195 /* JobList.storyboard in Resources */,
 				F4B4399C283A88FA0011B52C /* LaunchScreen.storyboard in Resources */,
+				F41F4A1429CF4EA800AC3D19 /* KeepListCell.xib in Resources */,
 				F4E02970292A72B20006F195 /* TopCollectionViewCell.xib in Resources */,
 				F497448C283E73BB0000A7B0 /* Image.xcassets in Resources */,
 				F4B43999283A88FA0011B52C /* Assets.xcassets in Resources */,
@@ -449,6 +456,7 @@
 				F4EFC8F4297D85F00089603E /* JobDetailPresenter.swift in Sources */,
 				F4E0296529228CD30006F195 /* KeepListViewController.swift in Sources */,
 				F4E0297E29422B3F0006F195 /* JobDetailViewController.swift in Sources */,
+				F41F4A1629CF4EF000AC3D19 /* KeepListCell.swift in Sources */,
 				F4B4398D283A88F70011B52C /* AppDelegate.swift in Sources */,
 				F4E0296F292A72B20006F195 /* TopCollectionViewCell.swift in Sources */,
 				F4B4398F283A88F70011B52C /* SceneDelegate.swift in Sources */,
