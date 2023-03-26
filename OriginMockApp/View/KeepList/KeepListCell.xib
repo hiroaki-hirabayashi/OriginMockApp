@@ -26,7 +26,7 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yKU-Oe-aO1" userLabel="Company Name Label">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="キープした社名" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yKU-Oe-aO1" userLabel="Company Name Label">
                                 <rect key="frame" x="20" y="35.5" width="413" height="225.5"/>
                                 <color key="backgroundColor" red="0.83216959239999999" green="0.98548370600000001" blue="0.47333085539999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -56,6 +56,10 @@
                     <constraint firstItem="uzF-Dl-bdP" firstAttribute="centerX" secondItem="eix-ye-xNC" secondAttribute="centerX" id="wEm-iw-9yc"/>
                 </constraints>
             </tableViewCellContentView>
+            <connections>
+                <outlet property="companyNameLabel" destination="yKU-Oe-aO1" id="SDe-cI-3ve"/>
+                <outlet property="keepedDateLabel" destination="X8T-VE-Fec" id="I54-2N-f9r"/>
+            </connections>
             <point key="canvasLocation" x="-77.536231884057983" y="202.56696428571428"/>
         </tableViewCell>
     </objects>
